@@ -1,40 +1,79 @@
-/* table{
-border: 1px solid rgb(255, 255, 255);
-border-collapse: collapse;
-margin-left: 100px;
-
-
-
-}
-th , td{
-    padding: 5px;
-    border-collapse: collapse;
-    border: 1px solid rgb(255, 255, 255);
+.main-footer{
     
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+
 }
 
-tr{
 
+.footer1{
+   
+    flex-basis: 50%;
 }
-.table-padding{
-    /* padding-left: 10px;
-padding-right: 10px;
-padding-top: 3px;
-padding-bottom: 3px; */
-} */
+.footer1 h1{
+    font-size: 70px;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    color: #E6533C;
+}
+.footer1 p{
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: grey;
+    font-weight: 500;
+}
+.footer2{
+    
+    flex-basis: 50%;
+}
+.footer2 ul{ 
+display: grid;
+grid-template-columns: repeat(1 ,1fr);
+gap: 20px;
+list-style-type: none;
+color: grey;
+}
+.footer2 h1{ 
+   font-size: 32px;
+   font-weight: 800;
+   font-family: "Inter", sans-serif;
+   color: #ffffff;
+    }
+.footer3{
+flex-basis: 50%;
+}
 
 
+.footer3 ul{ 
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    gap: 20px;
+    list-style-type: none;
+    color: grey;
+    
+    }
 
+    .footer3 h1{ 
+        font-size: 32px;
+        font-weight: 800;
+        font-family: "Inter", sans-serif;
+        color: #ffffff;
+         }
 
+         .last-footer{
+            text-align: center;
+           
+         }
+         .last-footer p{
+           font-size: 20px;
+           color: rgb(200, 200, 200);
+           
+         }
 
-
-
-
-
-
-
-
-<div class="input-div">
-                <input class="input-bmi " type="text" placeholder="Height/cm">
-                <input class="input-bmi" type="text" placeholder="Weight/kg">
-             </div>
+         .real-footer{
+            background: rgb(23,23,29);
+            background: linear-gradient(90deg, rgba(23,23,29,1) 35%, rgba(11,63,74,1) 100%);
+         }
