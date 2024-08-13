@@ -1,13 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versatile UI</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+  
+
     <link rel="stylesheet" href="styles/style.css">
     
+
 </head>
-<body>
+
+<body class="body root-container">
+
+    <header>
+        <nav class="high">
+            <h1 class="nav-title">Fitness</h1>
+            <ul class="nav-options">
+
+                <li><a class="btn-orange" id="a-id" href=""> Home</a> </li>
+                <li> <a id="a-id" href="">Service</a> </li>
+                <li> <a id="a-id" href="">Contact</a> </li>
+                <li> <a id="a-id" href="">About</a> </li>
+
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-title">
+                <h2 id="title">Get body in <br> shape & stay healthy</h2>
+                <p id="para">A huge selection of health and fitness content, healthy recipes
+                    and <br> transformation stories to help you get fit and stay fit!</p>
+                <button class="btn-1">Join Club Now!</button>
+                <button class="btn-2">Download App</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/Group 79.png" alt="">
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="change-your-habit"> 
+            <h2 class="title-chngg">Change Your Habits</h2>
+            <p class="subtitle-chng">We believe fitness should be accessible to everyone, everywhere, regardless of income or 
+                access to a gym</p>
+<!--  -->
+                <div class="middle-4">
+                <div>
+
+                    <img class="pic-1" src="images/image 3.png" alt="">
+                    <h4 class="title-chng">Movement</h4>
+                    <p class="subtitle-chng">We believe fitness should be 
+                        accessible to everyone</p>
+                </div>
+                <div>
+
+                    <img class="pic-1" src="images/image 4.png" alt="">
+                    <h4 class="title-chng">Time</h4>
+                    <p class="subtitle-chng">We believe fitness should be 
+                        accessible to everyone</p>
+                </div>
+                <div>
+
+                    <img class="pic-1" src="images/image 5.png" alt="">
+                    <h4 class="title-chng">Practise</h4>
+                    <p class="subtitle-chng">We believe fitness should be 
+                        accessible to everyone</p>
+                </div>
+                <div>
+
+                    <img class="pic-1" src="images/image 2.png" alt="">
+                    <h4 class="title-chng">Weight Loss</h4>
+                    <p class="subtitle-chng">We believe fitness should be 
+                        accessible to everyone</p>
+                </div>
+            </div>
+                <!--  -->
+        </section>
+        <section class="run">
+            
+        <div class="description">
+            <h2 class="titlee">Run an Extra<br>Mile Easily</h2>
+            <p class="subtitle-chngs">We believe fitness should be 
+                accessible to everyone, everywhere, 
+                regardless of income or access to a 
+                gym.With hundreds of professional 
+                workouts.</p>
+            <button class="btn-1">Join Now!</button>
+        </div>
+        <div class="img-box">
+            <img class="img-boxx" src="images/rectng.png" alt="">
+        </div>
+
+        
+   
+        </section>
+        <!-- <section class="training-exercises">
+            
+            <div class="training-heading">
+                <h1 class="title-chng">Training And Exercise</h1>
+                <p class="subtitle-chng">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa erro magnam asperiores veniam  iste, eligendi qui fugit.</p>
+             </div>
+        
+             <div class="exercise">
+                <div class="image-line-one">
+                    <img  class="one width-left-right" src="/images/exercise1.jpg" alt="">
+                    <img class="two" src="/images/exercise2.png" alt="">
+                    <img class="three width-left-right" src="/images/exercise3.png" alt="">
+                 </div>
+                 <div class="image-line-one">
+                    <img class="one" src="/images/exercise4.png" alt="">
+                    <img class="two width-left-right" src="/images/exercise5.jpg" alt="">
+                    <img class="three width-left-right" src="/images/exercise6.jpg" alt="">
+                 </div>
+             </div>
+        </section> -->
+        <div class="first-part">
+            <h2 class="bmi-heading">BMI Calculator</h2>
+            <p class="bmi-decs">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        </div>
+
+        <section class="bmi-cal">
+            
+            
+        <!--  -->
+            
+       <section class="main-bmi">
+        <div class="samu">
+            <h2 class="chart-heading">BMI Calculator Chart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BMI</th>
+                        <th>Weight Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr>
+                        <td>18.5-24.9</td>
+                        <td>Healthy</td>
+                    </tr>
+                    <tr>
+                        <td>25.0-29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr>
+                        <td>30- and above</td>
+                        <td>Obese</td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+
+         <div class="calc-bmi">
+            <h1 class="charti-heading">Calculate your BMI</h1>
+            <p class="chartix-heading">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+            <!-- ----------------- -->
+             <div class="input-div">
+                <input class="input-bmi " type="text" placeholder="Height/cm">
+                <input class="input-bmi" type="text" placeholder="Weight/kg">
+             </div>
+             <div class="input-div" >
+                <input class="input-bmi" type="text" placeholder="Age">
+               
+                    <!-- <input class="input-bmi" type="text" placeholder="Sex" > -->
+                 
+                    <select class="input-bmi">
+                        <option value="sex" disabled selected> Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="third-gender">Third Gender</option>
+                    </select>
+                    
+                    
+               
+                
+             </div>
+             <div>
+                <!-- <input class="input-bmi" type="text" placeholder="Select an activity factor"> -->
+
+                 <select class="input-bmi">
+                        <option value="">Select an activity factor</option>
+                        <option value="male">Walking</option>
+                        <option value="female">Cycling</option>
+                        <option value="third-gender">Swimming</option>
+                    </select>
+             </div>
+             <button class="clacu">Calculate</button>
+            <!-- -------------------- -->
+         </div>
+       </section>
+        <!--  -->
+        </section>
+
+        <section class="extra">
+            <div class="extra-head">
+                <h1>Our Fitness Package</h1>
+                <p class="extra-subtitle">We believe fitness should be accessible to everyone.</p>
+                </div>
+                <div class="package">
+                    <img  class="pack-img" src="images/Black and Green Gyms Back to Business Portrait Banner.png" alt="">
+                    
+                    <img class="pack-img pack-img-2" src="images/Black and Red Gyms Back to Business Portrait Banner.png" alt="">
+
+                    <img class="pack-img" src="images/og.png" alt="">
+                </div>
+        </section>
+
+        <section class="meet">
+
+
+            <div class="meet-head">
+                <h2 class="title-chngg">Meet Our Team</h2>
+                <p class="subtitle-chng">We believe fitness should be accessible to everyone, everywhere, regardless of income or 
+                    access to a gym</p>
+            </div>
+            <div class="main-team">
+                <div class="main-div">
+                    <div class="green">
+                        <div class="tema">
+                            <h2>Jerome Bell</h3>
+                            <p>Trainer</p>
+                            </div>
+                      
+                    </div>
+                    <div class="red">
+                        <div class="tema">
+                            <h2>Jerome Bell</h3>
+                            <p>Trainer</p>
+                            </div>
+                    </div>
+                    <div class="blue">
+                        <div class="tema">
+                            <h2>Jerome Bell</h3>
+                            <p>Trainer</p>
+                            </div>
+                    </div>
+                    <div class="yellow">
+                        <div class="tema">
+                            <h2>Jerome Bell</h3>
+                            <p>Trainer</p>
+                            </div>
+                    </div>
+                    <div class="orange">
+                        <div class="tema">
+                            <h2>Jerome Bell</h3>
+                            <p>Trainer</p>
+                            </div>
+                    </div>
+                    <div class="black">
+                        <div class="tema">
+                            <h2>Jerome Bell</h3>
+                            <p>Trainer</p>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+
+        </section>
+
+       
+    </main>
+
+     
+    <footer class="real-footer">
+
+
+         <section class="main-footer">
+            <div class="footer1"> 
+                <h1>Fitness</h1>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+            </div>
+
+            <div class="footer2">
+                <h1>Get Started</h1>
+                <ul>
+                    <li>Service</li>
+                    <li>Contact Us</li>
+                    <li>Affiliate Progam</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+
+            <div class="footer3">
+                <h1>Get Started</h1>
+                <ul>
+                    <li>Service</li>
+                    <li>Contact Us</li>
+                    <li>Affiliate Progam</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+
+         </section>
+
+         <div class="last-footer">
+            <img src="images/Vector 5.png" alt="">
+            <p>All right reserved @Fitness 2024</p>
+        </div>
+           
+    </footer>
+
+
     
+
 </body>
+
 </html>
