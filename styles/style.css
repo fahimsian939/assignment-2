@@ -30,7 +30,14 @@ font-family: "Inter", sans-serif;
     max-width: 1200px ;
     margin: auto;
 }
-
+.hero-image{
+    background: linear-gradient(
+ 180deg,
+ rgba(19, 19, 19, 0.747) 0%,
+ rgb(30, 30, 30) 50%,
+ rgba(1, 1, 1, 0.719) 100%
+ );
+}
 .ham-burger{
     display: none;
 }
@@ -1103,6 +1110,7 @@ border-radius: 5px;
 
     .hero-image {
         margin-top: -250px;
+
     }
 
     .hero-image img {
