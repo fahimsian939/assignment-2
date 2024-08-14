@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.cdnfonts.com/css/miama");   
 
 
 font-family: "Inter", sans-serif;
@@ -7,35 +8,132 @@ font-family: "Inter", sans-serif;
     border-width: 2px;
     border-style: dotted;
 } */
-
+*{
+    /* border: 1px solid red; */
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    /* border: 1px solid red; */
+}
+.copyright{
+    margin-top: 20px;
+}
+.shape-text{
+    font-family: "miama" , sans-serif;
+    font-style: italic;
+    font-weight: 100;
 }
 .root-container{
     max-width: 1200px ;
     margin: auto;
 }
 
-.high{
+.ham-burger{
+    display: none;
+}
+
+.high {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 50px;
+    
+}
+
+/* .ham-burger{
+    display: none;
+/* }  */
+.banner-title{
+    margin-bottom: 50px;
+}
+.nav-title{
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.nav-options {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 20px ;
+}
+
+.nav-options li a {
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.btn-orange {
+    background-color: rgba(230, 83, 60, 1);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+@media (max-width: 576px) {
+    .high {
+        flex-direction: row;
+       
+    }
+
+    .nav-options {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        
+        
+    }
+
+    .high.active .nav-options {
+        display: flex; 
+    }
+
+    .nav-options li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-options li a {
+        display: block;
+        
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    
+    .nav-title {
+        cursor: pointer;
+    }
+}
+
+
+/* .high{
    
     
     display: flex;
     color: aliceblue;
     gap: 790px;
    font-family: "Inter", sans-serif;
-}
-.btn-orange{
+} */
+/* .btn-orange{
     background-color: orangered;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 10px;
-}
+} */
 #a-id{
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -52,7 +150,7 @@ font-family: "Inter", sans-serif;
     /* font-size: 36px; */
     font-style: italic;
 }
-.nav-options{
+/* .nav-options{
     display: grid;
   grid-template-columns: repeat(4 , 1fr);
   gap: 30px;
@@ -62,7 +160,7 @@ font-family: "Inter", sans-serif;
   padding: 5px;
   list-style: none;
   padding: 6px;
-}
+} */
 header{
   background-color: black;  
 }
@@ -198,8 +296,12 @@ color: white;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.run{
+
+
+
+/* .run{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 60px;
     background-color: rgb(46, 46, 46);
@@ -209,15 +311,73 @@ color: white;
     font-family: "Inter", sans-serif;
    
 }
+
+
 .img-boxx{
     max-height: 300px;
     max-width: 300px;
     margin-right: 180px;
     border-radius: 20px;
     font-family: "Inter", sans-serif;
+} */
+
+/* General styles for larger screens */
+.run {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: rgb(46, 46, 46);
+    height: 310px;
+    align-items: center;
+    margin: 0px 100px 0px 100px;
+    font-family: "Inter", sans-serif;
 }
+
+.img-boxx {
+    max-height: 300px;
+    max-width: 300px;
+    margin-right: 180px;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Responsive styles for screens up to 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .run {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        margin: 20px; /* Reduce margins for smaller screens */
+    }
+
+    .img-boxx {
+        max-height: 250px;
+        max-width: 250px;
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+}
+
+/* Additional responsive styles for screens up to 480px (small phones) */
+@media (max-width: 576px) {
+    .run {
+        margin: 10px; /* Further reduce margins for small screens */
+    }
+
+    .img-boxx {
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+
+
+
 .description{
-    margin-left: 50px;
+    margin: 0 auto;
+    text-align: start;
+    align-items: center;
     
 }
 
@@ -269,6 +429,7 @@ table , th ,td{
 .input-div{
     display: flex;
     align-items: center;
+    width: 100%;
     /* gap: 12px;
     margin-bottom: 5px; */
 }
@@ -724,10 +885,169 @@ border-radius: 5px;
 @media  (max-width:576px){
     
     .bmi-cal{
-        display: grid ;
-        grid-template-columns: repeat(1 , 1fr);
-        grid-template-rows: 600px 600px;
+       
+        flex-direction: row;
+        justify-content: space-between;
     }
+    .main-bmi{
+        flex-direction: column;
+    }
+    .input-div{
+        width: 300px;
+    }
+    .clacu{
+        width: 100%;
+    }
+}
+
+/* Heading  */
+
+@media  (max-width:576px){
+
+    .first-part{
+        align-items: start;
+    }
+
+}
+
+
+
+@media  (max-width:576px){
+
+    .middle-4{
+
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .title-chngg{
+        font-size: 32px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+    }
+
+    .subtitle-chng{
+        font-size: 14px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+        color: #c7c7c7;
+        margin-bottom: 5px;
+    }
+}
+
+@media  (max-width:576px){
+
+    .banner{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-image{
+        
+       
+	max-width: 100%;
+    
+	overflow: auto;
+    }
+    .banner-title{
+        text-align: start;
+        margin-right: 50px;
+    }
+    .btn-class{
+        display: flex;
+    }
+
+}
+
+
+.shape-text{
+    font-family: ;
+}
+
+
+
+.success-stories {
+    background-color: #383838;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.success-stories h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: rgba(230, 83, 60, 1);
+}
+
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.story-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.story-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story-content {
+    padding: 20px;
+}
+
+.story-content h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #e67e22;
+}
+
+.story-content p {
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 576px) {
+    .story-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    nav {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: none;
+    }
+  .ham-burger{
+    display: block;
+    margin-top: 30px;
+  }
+  .ham-burger i {
+    font-size: 26px;
+    color: #ffffff;
+  }
+ 
 }
 
 
@@ -740,6 +1060,53 @@ border-radius: 5px;
 
 
 
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner-title {
+        max-width: 100%;
+    }
+
+    .banner-title h2 {
+        font-size: 2.5em;
+    }
+
+    .banner-title p {
+        font-size: 1em;
+        margin-top: 15px;
+    }
+
+    .btn-class {
+        margin-top: 20px;
+    }
+
+    .btn-class .btn-1,
+    .btn-class .btn-2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .hero-image {
+        margin-top: -250px;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+}
 
 
 
