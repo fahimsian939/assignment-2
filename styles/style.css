@@ -706,8 +706,11 @@ border-radius: 5px;
 .footer1, .footer2, .footer3 {
     flex-basis: 30%;
     margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
 }
-
+.under{
+    margin-top: 20px;
+}
 .footer1 h1 {
     font-size: 60px;
     font-family: "Inter", sans-serif;
@@ -753,7 +756,6 @@ border-radius: 5px;
     color: rgb(200, 200, 200);
 }
 
-/* Responsive Design for Mobile Devices */
 @media screen and (max-width: 576px) {
     .footer1 h1 {
         font-size: 40px;
